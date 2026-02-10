@@ -11,6 +11,88 @@
 
 ---
 
+## 🎬 Demo Video & Complete Package
+
+### 📺 Watch the Interactive Demo
+
+**[► Watch the Full Demo Video (English & Français)](https://share.descript.com/view/nSgAUdKEN2k)**
+
+Comprehensive visual walkthrough explaining:
+- The problem: AI agent chaos and security nightmares
+- The solution: Hall of Justice League Portal architecture
+- Agents building agents workflow
+- AIGovOps security and Zero Trust implementation
+- Model-agnostic building blocks
+- Step-by-step implementation guide (multilingual)
+- Impact metrics: 5-6x faster delivery, 90%+ risk reduction
+
+### 📦 Download Complete Package
+
+Clone this repository to get the full package:
+
+```bash
+git clone https://github.com/bobrapp/justice-league-v3-model-agnostic.git
+cd justice-league-v3-model-agnostic
+```
+
+**Package includes:**
+
+- ✅ Full source code (Next.js 14 + TypeScript 5.0)
+- ✅ Deployment scripts (Bicep, Python, Bash)
+- ✅ Configuration templates (.env.example, models.yaml)
+- ✅ Agent role definitions and workflows
+- ✅ Security guardrails (OWASP ASI Top-10)
+- ✅ Observability dashboards (Grafana + Prometheus)
+- ✅ Complete documentation (English & Français)
+- ✅ Visual workflow diagrams
+- ✅ Demo video and presentation materials
+
+### 🚀 Quick Start - Digital Ocean Deployment
+
+```bash
+# 1. Prerequisites
+sudo apt update && sudo apt install -y docker.io nodejs npm python3 python3-pip
+
+# 2. Configure environment
+cp .env.example .env
+# Edit .env with your API keys (OpenAI, Anthropic, etc.)
+# NEVER commit PII or secrets!
+
+# 3. Run deployment script
+chmod +x scripts/install.sh
+./scripts/install.sh
+
+# 4. Configure nginx reverse proxy
+sudo cp configs/nginx.conf /etc/nginx/sites-available/hall-of-justice
+sudo ln -s /etc/nginx/sites-available/hall-of-justice /etc/nginx/sites-enabled/
+sudo systemctl restart nginx
+
+# 5. Enable SSL with Let's Encrypt
+sudo certbot --nginx -d yourdomain.com
+
+# 6. Start the platform
+docker-compose up -d
+```
+
+### 🔐 Security & Compliance
+
+- **Zero Trust Architecture**: mTLS + JWT for all agents
+- **AIGovOps Guardrails**: OWASP ASI Top-10 compliance
+- **Human-in-the-Loop**: Approval gates for all deployments
+- **Audit Logging**: Complete trail for regulators
+- **Sandboxed Connectors**: Isolated vendor integrations
+- **No PII Storage**: Privacy-first design
+
+### 🌍 Multilingual Support
+
+Documentation and demo available in:
+- 🇬🇧 English
+- 🇫🇷 Français (French)
+
+
+
+---
+
 ## 🎯 What is This?
 
 The **Hall of Justice League Portal** is a governed, model-agnostic platform where specialized AI wisdom agents collaborate to **build new production agents** under strict **AIGovOps** and **Zero Trust** controls.
@@ -167,5 +249,39 @@ This repository includes a complete downloadable package with:
 - Lovable/Cursor/Claude Code configs
 - 3-minute & 10-minute demo scripts
 - All documentation (PRD, architecture, security)
+- Release packages (GitHub Releases with ZIP downloads)
+- Demo video (Descript shareable link)
+
+### 📥 Download Options
+
+**Option 1: Git Clone (Recommended for developers)**
+```bash
+git clone https://github.com/bobrapp/justice-league-v3-model-agnostic.git
+```
+
+**Option 2: Download ZIP**
+- Go to [Releases](https://github.com/bobrapp/justice-league-v3-model-agnostic/releases)
+- Download the latest release ZIP file
+- Extract and follow QUICKSTART.md
+
+**Option 3: Watch Demo First**
+- [🎬 Demo Video](https://share.descript.com/view/nSgAUdKEN2k)
+- Then clone or download the repository
+
+### 🔗 Additional Resources
+
+- **Demo Video**: https://share.descript.com/view/nSgAUdKEN2k
+- **GitHub Repository**: https://github.com/bobrapp/justice-league-v3-model-agnostic
+- **AIGovOps Foundation**: https://aigovops.org (coming soon)
+- **Contact**: bobrapp@hotmail.com
+
+---
+
+**Built with ❤️ using AIGovOps principles:**
+- 👥 Humans in the loop
+- 🔒 Safety first
+- 🔍 Transparency always
+
+*Make your AI agents behave like heroes, not villains.* 🦸‍♂️🦸‍♀️
 
 **Download complete package**: See EXPORTS/ directory
